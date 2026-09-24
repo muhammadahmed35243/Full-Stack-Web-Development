@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #1b1035, #0d1b3d 60%, #06111f);
+}
+
+/* the card */
+.player {
+  width: 320px;
+  padding: 28px 26px 24px;
+  border-radius: 20px;
+  background: #221a3d;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
+}
+
+/* spinning vinyl disc */
+.vinyl {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #2b2b2b;
+  border: 6px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 5s linear infinite;
+}
+
+.vinyl-label {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff2fb0, #7b2ff7);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.track-title {
+  margin: 4px 0 2px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.track-artist {
+  margin: 0 0 18px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* equalizer bars */
+.equalizer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  height: 24px;
+  margin-bottom: 18px;
+}
+
+.equalizer span {
+  width: 5px;
+  height: 100%;
+  border-radius: 2px;
+  background: #00d4ff;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.equalizer span:nth-child(2) { animation-delay: 0.15s; }
+.equalizer span:nth-child(3) { animation-delay: 0.3s; }
+.equalizer span:nth-child(4) { animation-delay: 0.45s; }
+.equalizer span:nth-child(5) { animation-delay: 0.6s; }
+
+@keyframes bounce {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+/* progress bar */
+.progress {
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 6px;
+}
+
+.progress-fill {
+  width: 42%;
+  height: 100%;
+  border-radius: 3px;
+  background: #00d4ff;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 20px;
+}
+
+/* controls */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.ctrl-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.ctrl-btn:hover {
+  color: #fff;
+}
+
+.play-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: none;
+  background: #7b2ff7;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background: #9350ff;
+}
+
+/* like button: hidden checkbox + label is the classic CSS-only toggle */
+.like-check {
+  display: none;
+}
+
+.like-btn {
+  cursor: pointer;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.like-check:checked + .like-btn {
+  color: #ff2fb0;
+}
+
+/* bottom row: like + volume */
+.bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.vol-bar {
+  width: 70px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.vol-fill {
+  width: 65%;
+  height: 100%;
+  border-radius: 2px;
+  background: #00d4ff;
+}
