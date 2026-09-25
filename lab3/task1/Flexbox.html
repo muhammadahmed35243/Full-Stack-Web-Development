@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tutorial - Complete Guide</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="d-flex justify-content-between bg-light p-3"> <!-- horizontal alignment between = push first item to left, last item to right, and evenly space out others.-->
+            <div class="p-2 bg-primary text-white">Item 1</div>
+            <div class="p-2 bg-success text-white">Item 2</div>
+            <div class="p-2 bg-danger text-white">Item 3</div>
+        </div>
+
+        <div class="d-flex align-items-center 
+        " style="height:100px; background:lightgray;"> <!-- Controls vertical alignment of flex items -->
+            <div class="p-2 bg-danger">Box 1</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-success">Box 2</div>
+
+          </div>
+
+          <div class="d-flex flex-wrap bg-light">    <!-- By default, flex items try to fit in one row. flex-wrap lets them wrap to the next line if there’s not enough space.-->
+            <div class="p-2 bg-danger">Box 1</div>
+            <div class="p-2 bg-success">Box 2</div>
+            <div class="p-2 bg-info">Box 3</div>
+            <div class="p-2 bg-warning">Box 4</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+            <div class="p-2 bg-primary">Box 5</div>
+          </div>
+          
+          
+    </body>
+</html>
+
+
+<!-- Use Grid to decide “how much space each column takes.” Use Flexbox to decide “how items are aligned inside that space.”-->
+
+<!--  Flexbox (Flexible Box Layout) is a one-dimensional layout system in CSS.
+It is used to arrange items in a row or a column, making it easy to align and distribute space between items, even when their size is unknown or dynamic.
+Key Features:
+Works in one direction at a time (row OR column).
+Automatically adjusts spacing between items.
+Can align items horizontally (main axis) or vertically (cross axis).
+Very useful for navigation bars, toolbars, buttons, and small layouts.
+
+
+
+| Feature           | Flexbox                                        | Grid System                                  |
+| ----------------- | ---------------------------------------------- | -------------------------------------------- |
+| Dimension         | 1D (row OR column)                             | 2D (rows AND columns)                        |
+| Best for          | Small components (navbars, buttons, alignment) | Full-page layouts, complex designs           |
+| Control           | Aligns and distributes space between items     | Creates structured layouts with rows/columns |
+| Bootstrap classes | `d-flex`, `justify-content-`, `align-items-`   | `row`, `col-`                                |
+-->
+

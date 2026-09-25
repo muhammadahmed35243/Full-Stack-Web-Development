@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tutorial - Complete Guide</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="container">
+        <div class="row">
+           <div class="col-2 bg-light">Column 1 (2/12)</div>
+           <div class="col-4 bg-warning"> Column 2 (4/12) </div>
+           <div class="col-7 bg-secondary text-white">Column 3 (6/12)</div>
+           </div>
+          </div>
+
+
+          <!-- Step 1: The 12-column system. Think of a row as having 12 empty boxes side by side:
+                [1][2][3][4][5][6][7][8][9][10][11][12]
+                You decide how many boxes each column should take.
+                col-12 → takes all 12 boxes → full width.
+                col-6 → takes 6 out of 12 → half width.
+                col-3 → takes 3 out of 12 → one-fourth width.
+                📱 Step 2: Mobile-first behavior
+                Bootstrap starts with mobile layout (col-12).
+                That means:
+                On small screens (phones), each column will fill the whole row and stack one below the other.
+                Example with 4 columns (col-12 on mobile):
+                [Col1]
+                [Col2]
+                [Col3]
+                [Col4]
+                💻 Step 3: Breakpoints (rules for bigger screens)
+                Bootstrap uses CSS media queries (rules that apply only if the screen is wide enough).
+                col-md-6 → applies only if the screen is 768px or wider (tablet size)
+                col-lg-3 → applies only if the screen is 992px or wider (desktop size)
+                So the browser checks:
+                If width < 768px → only col-12 applies.
+                If width ≥ 768px → switch to col-md-6.
+                If width ≥ 992px → switch to col-lg-3.
+                🖼 Step 4: Visual Example for Your Code
+                Your code:
+                <div class="col-12 col-md-6 col-lg-3">Column</div>
+                On Mobile (<768px):
+                col-12 → full width → stacked vertically
+                [Col1]
+                [Col2]
+                [Col3]
+                [Col4]
+                On Tablet (≥768px):
+                col-md-6 → half width → 2 per row
+                [Col1][Col2]
+                [Col3][Col4]
+                On Desktop (≥992px):
+                col-lg-3 → one-fourth width → 4 per row
+                [Col1][Col2][Col3][Col4]
+        -->
+
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 bg-danger">Column 1</div>
+            <div class="col-12 col-md-6 col-lg-3 bg-warning">Column 2</div>
+            <div class="col-12 col-md-6 col-lg-3 bg-info">Column 3</div>
+            <div class="col-12 col-md-6 col-lg-3 bg-success">Column 4</div>
+          </div>
+
+        </body>
+        </html>
