@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Class Timetable</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container sheet">
+    <h1>BSCS-V-B (Shift-I)</h1>
+
+    <table class="table table-bordered timetable">
+      <thead>
+        <tr>
+          <th class="day-col"></th>
+          <th>08:00am-09:00am<span>8:00 - 9:00</span></th>
+          <th>09:00am-10:00am<span>9:00 - 10:00</span></th>
+          <th>10:00am-11:00am<span>10:00 - 11:00</span></th>
+          <th>11:00am-12:00pm<span>11:00 - 12:00</span></th>
+          <th>12:00pm-01:00pm<span>12:00 - 1:00</span></th>
+          <th>01:00pm-02:00pm<span>1:00 - 2:00</span></th>
+          <th>02:00pm-03:00pm<span>2:00 - 3:00</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="day-col">Mo</th>
+          <td class="empty"></td>
+          <td>
+            <span class="teacher">CS-Mr Hafiz Obiad Ullah Khan</span>
+            <span class="course">Full Stack Web Development</span>
+            <span class="room">C-205 (Shift-I)</span>
+          </td>
+          <td>
+            <span class="teacher">Maths-Dr Waqas Sarwar Abbasi</span>
+            <span class="course">Linear Algebra</span>
+            <span class="room">C-301 (Shift-I)</span>
+          </td>
+          <td class="merged" colspan="3">
+            <span class="teacher">CS-Ms Kanwal Ejaz</span>
+            <span class="course">Artificial Intelligence Lab</span>
+            <span class="room">Lab 5 A Block (Shift-I)</span>
+          </td>
+          <td>
+            <span class="teacher">CS-Ms Warda Aslam</span>
+            <span class="course">Operating Systems</span>
+            <span class="room">C-301 (Shift-I)</span>
+          </td>
+        </tr>
+        <tr>
+          <th class="day-col">Tu</th>
+          <td class="empty"></td>
+          <td>
+            <span class="teacher">CS-Ms Warda Aslam</span>
+            <span class="course">Operating Systems</span>
+            <span class="room">C-206 (Shift-I)</span>
+          </td>
+          <td>
+            <span class="teacher">CS-Mr Hafiz Obiad Ullah Khan</span>
+            <span class="course">Full Stack Web Development</span>
+            <span class="room">C-301 (Shift-I)</span>
+          </td>
+          <td>
+            <span class="teacher">AUSOM-Ms Ayesha Munir-VFM</span>
+            <span class="course">Introduction to Management</span>
+            <span class="room">C-206 (Shift-I)</span>
+          </td>
+          <td class="empty"></td>
+          <td>
+            <span class="teacher">Maths-Dr Waqas Sarwar Abbasi</span>
+            <span class="course">Linear Algebra</span>
+            <span class="room">C-205 (Shift-I)</span>
+          </td>
+          <td>
+            <span class="teacher">CS-Ms Kanwal Ejaz</span>
+            <span class="course">Advisory Class</span>
+            <span class="room">C-201 (Shift-I)</span>
+          </td>
+        </tr>
+        <tr>
+          <th class="day-col">We</th>
+          <td class="empty"></td>
+          <td class="merged daa" colspan="2">
+            <span class="teacher">CS-Dr Mehdi Hassan, CS-Mr Muhammad Junaid Nazar</span>
+            <span class="course">Design and Analysis of Algorithms</span>
+            <span class="time-fix">09:30am - 11:00am</span>
+            <span class="room">Lecture Hall 01</span>
+          </td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td class="empty"></td>
+          <td>
+            <span class="teacher">CS-Ms Kanwal Ejaz</span>
+            <span class="course">Artificial Intelligence</span>
+            <span class="room">C-205 (Shift-I)</span>
+          </td>
+        </tr>
+        <tr>
+          <th class="day-col">Th</th>
+          <td class="empty"></td>
+          <td class="merged daa" colspan="2">
+            <span class="teacher">CS-Dr Mehdi Hassan, CS-Mr Muhammad Junaid Nazar</span>
+            <span class="course">Design and Analysis of Algorithms</span>
+            <span class="time-fix">09:30am - 11:00am</span>
+            <span class="room">Lecture Hall 01</span>
+          </td>
+          <td class="merged" colspan="3">
+            <span class="teacher">CS-Ms Warda Aslam</span>
+            <span class="course">Operating Systems Lab</span>
+            <span class="room">Lab 13 C Block (3rd Floor) (Shift-I)</span>
+          </td>
+          <td>
+            <span class="teacher">CS-Ms Kanwal Ejaz</span>
+            <span class="course">Artificial Intelligence</span>
+            <span class="room">C-302 (Shift-I)</span>
+          </td>
+        </tr>
+        <tr>
+          <th class="day-col">Fr</th>
+          <td class="empty"></td>
+          <td>
+            <span class="teacher">AUSOM-Ms Ayesha Munir-VFM</span>
+            <span class="course">Introduction to Management</span>
+            <span class="room">C-203 (Shift-I)</span>
+          </td>
+          <td>
+            <span class="teacher">Maths-Dr Waqas Sarwar Abbasi</span>
+            <span class="course">Linear Algebra</span>
+            <span class="room">C-203 (Shift-I)</span>
+          </td>
+          <td class="merged" colspan="3">
+            <span class="teacher">CS-Mr Hafiz Obiad Ullah Khan</span>
+            <span class="course">Full Stack Web Development Lab</span>
+            <span class="room">Lab 5 A Block (Shift-I)</span>
+          </td>
+          <td class="empty"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="footer">Timetable generated: 03/09/2026</p>
+  </div>
+</body>
+</html>

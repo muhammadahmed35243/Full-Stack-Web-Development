@@ -1,0 +1,19 @@
+body {
+  background: #f5f6f8;
+}
+
+.hero {
+  min-height: 60vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 60px 20px;
+}
+
+.product-img {
+  height: 180px;
+  border-radius: 8px 8px 0 0;
+}
+
+.p1 { background: linear-gradient(135deg, #434343, #000000); }
+.p2 { background: linear-gradient(135deg, #00c6ff, #0072ff); }
+.p3 { background: linear-gradient(135deg, #f7971e, #ffd200); }
+.p4 { background: linear-gradient(135deg, #11998e, #38ef7d); }

@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  background: #eef1f5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+.sheet {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 25px 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin: 10px 0 20px;
+}
+
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.timetable th,
+.timetable td {
+  border: 1px solid #444;
+  vertical-align: top;
+  text-align: center;
+  padding: 6px 4px;
+}
+
+thead th {
+  background: #f7f7f7;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 2px;
+}
+
+thead th span {
+  display: block;
+  font-weight: normal;
+  color: #555;
+  font-size: 11px;
+}
+
+.day-col {
+  width: 70px;
+  font-size: 26px;
+  font-weight: bold;
+  background: #fafafa;
+}
+
+tbody td {
+  height: 90px;
+  font-size: 12px;
+}
+
+tbody td.empty {
+  background: #fff;
+}
+
+.teacher {
+  display: block;
+  font-size: 10px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.course {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.room {
+  display: block;
+  font-size: 11px;
+  color: #333;
+}
+
+.time-fix {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  color: #b3350a;
+  margin-bottom: 4px;
+}
+
+.merged {
+  background: #f4f8ff;
+}
+
+.merged .course {
+  font-size: 15px;
+}
+
+.daa {
+  background: #fff6ec;
+}
+
+.footer {
+  text-align: right;
+  font-size: 11px;
+  color: #777;
+  margin-top: 10px;
+}

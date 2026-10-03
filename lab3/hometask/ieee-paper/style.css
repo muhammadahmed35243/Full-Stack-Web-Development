@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10pt;
+  line-height: 1.15;
+  max-width: 8.5in;
+  margin: 0.75in auto;
+  padding: 0 0.62in;
+  color: #000;
+  background: #fff;
+}
+
+.paper-title {
+  text-align: center;
+  font-size: 24pt;
+  font-weight: normal;
+  margin: 0 0 4px;
+}
+
+.subtitle-note {
+  text-align: center;
+  font-size: 8pt;
+  color: #444;
+  margin: 0 0 18px;
+}
+
+.authors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 24px;
+  margin-bottom: 20px;
+}
+
+.author {
+  text-align: center;
+  width: 220px;
+  font-size: 10pt;
+}
+
+.author p {
+  margin: 0;
+}
+
+.author p:first-child {
+  margin-bottom: 2px;
+}
+
+/* two-column body, IEEE style */
+.paper-body {
+  column-count: 2;
+  column-gap: 0.25in;
+  text-align: justify;
+}
+
+.paper-body p {
+  margin: 0 0 8pt;
+  text-indent: 0.2in;
+}
+
+.abstract,
+.keywords {
+  text-indent: 0;
+  font-weight: normal;
+}
+
+.abstract {
+  font-weight: bold;
+}
+
+.abstract i,
+.keywords i {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 10pt;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 14pt 0 6pt;
+}
+
+h3 {
+  font-size: 10pt;
+  font-style: italic;
+  margin: 8pt 0 4pt;
+}
+
+.equation {
+  text-align: center;
+  text-indent: 0;
+  font-style: italic;
+  margin: 6pt 0;
+}
+
+.table-caption {
+  text-indent: 0;
+  font-size: 8pt;
+  text-align: center;
+  margin: 10pt 0 4pt;
+}
+
+.ieee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10pt;
+}
+
+.ieee-table th,
+.ieee-table td {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 8pt;
+  padding: 3px 5px;
+  text-align: center;
+}
+
+.figure-placeholder {
+  height: 100px;
+  margin: 10pt 0 0;
+  background: #eee;
+  border: 1px solid #999;
+}
+
+.figure-caption {
+  text-indent: 0;
+  font-size: 8pt;
+  text-align: center;
+  margin-top: 4pt;
+}
+
+.references {
+  text-indent: 0;
+  padding-left: 1.1em;
+  font-size: 8pt;
+  margin: 0;
+}
+
+.references li {
+  margin-bottom: 5pt;
+  text-align: justify;
+}
+
