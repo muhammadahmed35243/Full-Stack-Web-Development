@@ -2,7 +2,7 @@
 var name = "Muhammad Ahmed";
 var age = 21;
 var isStudent = true;
-var university = "FAST NUCES";
+var university = "Air University";
 
 console.log("Biography using var:");
 console.log("My name is " + name + ", I am " + age + " years old.");
@@ -12,8 +12,8 @@ const biography = {
   name: "Muhammad Ahmed",
   age: 21,
   isStudent: true,
-  address: { city: "Lahore", country: "Pakistan" },
-  degreeProgram: { name: "BS Computer Science", semester: 5, university: "FAST NUCES" },
+  address: { city: "Islamabad", country: "Pakistan" },
+  degreeProgram: { name: "BS Computer Science", semester: 5, university: "Air University" },
 };
 
 console.log("\nBiography from object:");
